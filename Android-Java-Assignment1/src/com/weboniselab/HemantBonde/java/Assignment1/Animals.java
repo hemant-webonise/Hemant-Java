@@ -1,8 +1,8 @@
 package com.weboniselab.HemantBonde.java.Assignment1;
 
 public class Animals {
-	private String str;
-	private int num;
+	private String type;
+	private int id;
 
 	public Animals() {
 		System.out.println("******************************************************");
@@ -14,7 +14,7 @@ public class Animals {
 
 	public Animals(String str) {
 		this();
-		this.str=str; 
+		this.type=str; 
 		/*
 		 * these private variables are made with a aim to have setter and getter later.
 		 * */
@@ -24,23 +24,23 @@ public class Animals {
 	public Animals(String str, int num) {
 		// It will call the constructor with String argument
 		this(str);
-		this.num=num;
+		this.id=num;
 		System.out.println("Animal Id : " + num);
 	}
 	public String getStr() {
-		return str;
+		return type;
 	}
 
 	public void setStr(String str) {
-		this.str = str;
+		this.type = str;
 	}
 
 	public int getNum() {
-		return num;
+		return id;
 	}
 
 	public void setNum(int num) {
-		this.num = num;
+		this.id = num;
 	}
 
 	protected String sound() {

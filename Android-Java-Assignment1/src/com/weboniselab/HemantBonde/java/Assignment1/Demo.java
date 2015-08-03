@@ -6,8 +6,10 @@ public class Demo {
 		// TODO Auto-generated method stub
 		StringBuilder concept = new StringBuilder("-------------------------------------------------");
 		concept.append("\nWe prefer not using + to concate instead StringBuilder and append() should be used.");
-
-		Animals doggy = new Dog("Rooky", 1);
+       /*Contructor overloading*/
+		Animals doggy = new Dog("Rooky");
+		Animals doggie = new Dog("Nextguy",3);
+		/*Method overriding-using method sound()*/
 		System.out.println(doggy.sound());
 		
 		Animals peacock = new Animals("Peacock", 2);
@@ -28,7 +30,7 @@ public class Demo {
 
 		try {
 			/* Tried casting of a parent to child-class */
-			/*Kitten test = new Animals();-will cause a Compile time error*/
+			/* Kitten test = new Animals();-will cause a Compile time error*/
 			Kitten test = (Kitten) new Animals();
 			System.out.println(test.sound());
 			

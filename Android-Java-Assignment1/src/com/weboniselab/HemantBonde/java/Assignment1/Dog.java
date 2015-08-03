@@ -1,8 +1,8 @@
 package com.weboniselab.HemantBonde.java.Assignment1;
 
 public class Dog extends Animals{
-	private int i;	
-	private String s;
+	private int id;	
+	private String name;
 	public Dog(){
 		super();
 		System.out.println("In Dog");
@@ -10,12 +10,12 @@ public class Dog extends Animals{
 	public Dog(String s) {
 		// TODO Auto-generated constructor stub
 		this();
-		this.s=s;
+		this.name=s;
 		System.out.println("Created Dog : "+s);
 	}	
 	public Dog(String s,int i) {
 		this(s);
-		this.i=i;
+		this.id=i;
 		System.out.println("Dog ID : "+i);
 	}
 	protected String sound() {
@@ -26,16 +26,16 @@ public class Dog extends Animals{
 	
 	
 	public int getI() {
-		return i;
+		return id;
 	}
 	public void setI(int i) {
-		this.i = i;
+		this.id = i;
 	}
 	public String getS() {
-		return s;
+		return name;
 	}
 	public void setS(String s) {
-		this.s = s;
+		this.name = s;
 	}
 
 }
